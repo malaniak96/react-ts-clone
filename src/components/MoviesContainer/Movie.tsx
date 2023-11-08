@@ -9,12 +9,11 @@ interface IProps {
 }
 
 const Movie: FC<IProps> = ({movie}) => {
-    const {poster_path, original_title, vote_average} = movie;
-
+    const {id, poster_path, original_title, vote_average} = movie;
 
     return (
         <li>
-           <NavLink to={'/movie/:id'}> <img src={`${urls.movie.imgUrl}${poster_path}`} alt={original_title}/></NavLink>
+           <NavLink to={`/movie/${id}?language=en-US`}> <img src={`${urls.movie.imgUrl}${poster_path}`} alt={original_title}/></NavLink>
             <div>{original_title}</div>
             <div>{vote_average}</div>
         </li>

@@ -1,16 +1,24 @@
-import React, {useEffect, useState} from 'react';
+import React, {FC, useEffect, useState} from 'react';
 import {useParams} from "react-router-dom";
 import {movieService} from "../../services/movieService";
 import {MovieInfo} from "./MovieInfo";
 import {IMovie} from "../../interfaces/movieInterface";
 
-const MoviesInfo = () => {
+interface IProps {
+    movie: IMovie;
+}
+const MoviesInfo:FC<IProps> = () => {
 
     const [getMovies, setGetMovies] = useState<IMovie[]>([]);
     const {id} = useParams();
 
     useEffect(() => {
-        movieService.getById(id).then(({data})=> setGetMovies(data.results))
+        if (id) {
+            const idAsNumber = parseInt(id, 10);
+            if (!isNaN(idAsNumber)) {
+                movieService.getById(idAsNumber).then(({ data }) => setGetMovies(data.results))
+            }
+        }
     }, [id]);
 
 

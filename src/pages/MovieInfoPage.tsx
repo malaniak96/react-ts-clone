@@ -1,18 +1,18 @@
 import React from 'react';
-import {MovieInfo} from "../components/MoviesContainer/MovieInfo";
 import {useAppLocation} from "../hooks/useAppLocation";
 import {IMovie} from "../interfaces/movieInterface";
+import {MoviesInfo} from "../components/MoviesContainer/MoviesInfo";
 
 
 
 
 const MovieInfoPage= () => {
-
-    const {state: {movie}} = useAppLocation<{movie: IMovie }>();
+    const {state} = useAppLocation<{movie: IMovie }>();
+    const movie = state && state.movie;
 
     return (
         <div>
-            {movie && <MovieInfo movie={movie}/>}
+            {movie && <MoviesInfo movie={movie}/>}
         </div>
     );
 };

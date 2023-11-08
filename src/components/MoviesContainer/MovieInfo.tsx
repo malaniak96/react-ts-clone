@@ -1,9 +1,7 @@
-import React, {FC, useEffect, useState} from 'react';
+import React, {FC} from 'react';
 
 import {IMovie} from "../../interfaces/movieInterface";
-import {useParams, useSearchParams} from "react-router-dom";
-import {movieService} from "../../services/movieService";
-import {number} from "joi";
+
 
 
 interface IProps {
@@ -12,8 +10,6 @@ interface IProps {
 const MovieInfo: FC<IProps>  = ({movie}) => {
 
     const {poster_path, original_title, overview, vote_average, genre_ids, release_date} = movie;
-
-  
 
     return (
         <ul>
