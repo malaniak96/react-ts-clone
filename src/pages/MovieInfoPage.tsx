@@ -5,8 +5,7 @@ import {MoviesInfo} from "../components/MoviesContainer/MoviesInfo";
 
 
 
-
-const MovieInfoPage= () => {
+const MovieInfoPage = () => {
     const {state} = useAppLocation<{movie: IMovie }>();
     const movie = state && state.movie;
 

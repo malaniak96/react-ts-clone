@@ -44,7 +44,7 @@ const MoviesList = () => {
 
            <div className="button">
                <button onClick={handlePagePrev} disabled={page === '1'}> &lt; </button>
-                    <span> Page: {page} </span>
+                    <span> Page: {page} out of 40863</span>
                <button onClick={handlePageNext} disabled={page === `${totalPages}`}> &gt; </button>
 
            </div>
