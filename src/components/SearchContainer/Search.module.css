@@ -1,0 +1,87 @@
+.ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+}
+
+.btn{
+    width: 35px;
+    height: 35px;
+    margin: 25px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.img{
+    width: 10vw;
+    height: 30vh;
+    border: 3px dashed white;
+}
+
+.title{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+.movie{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 15vw;
+    height: 40vh;
+    margin: 20px;
+    border: 2px solid red;
+    color: white;
+
+}
+
+.img:hover{
+    width: 15vw;
+    height: 40vh;
+    border: 3px dashed white;
+}
+
+
+.input{
+    width: 28vw;
+    height: 4vh;
+    border: 3px dashed red;
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 70px;
+}
+
+.button{
+    background-color: red;
+    width: 5.5vw;
+    height: 5vh;
+    border: 3px dashed black;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 13px;
+}

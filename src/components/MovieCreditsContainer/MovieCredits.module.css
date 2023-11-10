@@ -1,0 +1,56 @@
+.movieCredits{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    list-style: none;
+    text-align: center;
+    width: 15vw;
+    height: 35vh;
+    border:2px solid red;
+    margin-bottom: 20px;
+
+}
+
+.image{
+    width: 8vw;
+    height: 22vh;
+    border-radius: 50%;
+
+}
+
+h1{
+    display: flex;
+    color: darkgoldenrod;
+    text-align: center;
+    font-size: 25px;
+}
+
+.name{
+    color: red;
+    font-size: 20px;
+    margin-top: 7px;
+    margin-bottom: -4px;
+}
+
+h2{
+    font-size: 15px;
+     margin-bottom: 2px;
+     color: darkgoldenrod;
+}
+
+p{
+    font-size: 13px;
+    margin: 2px;
+    color: lightgoldenrodyellow;
+}

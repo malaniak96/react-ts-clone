@@ -15,7 +15,7 @@ const Header: React.FC = () => {
         <div className={css.Header}>
             <h1>The MovieDB</h1>
             <NavLink to={'movie'}>Movies</NavLink>
-            <NavLink to={'genres'}>Genres</NavLink>
+            <NavLink to={'genre'}>Genres</NavLink>
             <NavLink to={'search'}>Search</NavLink>
             <div className={`dark-mode-switch ${isDarkMode ? 'dark-mode' : 'light-mode'}`} >
                 <input type="checkbox" checked={isDarkMode} onChange={toggleMode}/>

@@ -3,20 +3,24 @@
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    color: white;
+    color: snow;
+    text-shadow: 2px 2px 3px rgb(255, 0, 0);
     font-size: 20px;
     height: 50px;
 }
 
 .Header a {
     text-decoration: none;
-    color: white;
+    color: red;
+    text-shadow: 3px 3px 3px rgb(213, 140, 11);
 }
 
 
 .Header a[class='active'] {
-    color: white;
+    color: red;
+    text-shadow: 4px 4px 3px rgb(213, 140, 11);
 }
+
 
 .dark-mode {
     background-color: #333;

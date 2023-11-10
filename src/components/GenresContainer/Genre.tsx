@@ -1,9 +1,22 @@
-import React from 'react';
+import React, {FC} from 'react';
 
-const Genre = () => {
+import {NavLink} from "react-router-dom";
+
+import {IGenre} from "../../interfaces/genreInterface";
+// @ts-ignore
+import css from './Genre.module.css';
+
+
+interface IProps {
+    genre: IGenre
+}
+const Genre:FC<IProps> = ({genre}) => {
+
+    const {id,name} = genre;
+
     return (
-        <div>
-            
+        <div className={css.genre}>
+            <NavLink to={`${id}`}> <h3> {name}</h3></NavLink>
         </div>
     );
 };

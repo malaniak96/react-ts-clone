@@ -1,0 +1,29 @@
+.genres{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 28px;
+}
+
+.genre{
+    width: 15vw;
+    height: 15vh;
+    border: 2px dashed white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+h3{
+    color: darkgoldenrod;
+    text-shadow: 2px 2px 3px rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+}
