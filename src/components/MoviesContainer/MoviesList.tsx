@@ -5,15 +5,16 @@ import {useSearchParams} from "react-router-dom";
 import {movieService} from "../../services/movieService";
 import {Movie} from "./Movie";
 import {IMovie} from "../../interfaces/movieInterface";
-// @ts-ignore
+
 import css from './Movies.module.css';
 
 
 const MoviesList = () => {
     const [movies, setMovies] = useState<IMovie[]>([]);
     const [query, setQuery] = useSearchParams({page: '1'});
-    const page: string  = query.get('page') || '1';
     const [totalPages, setTotalPages] = useState(1);
+    const page: string  = query.get('page') || '1';
+
 
     useEffect(() => {
        movieService.getAll(page).then(({data}) => {

@@ -6,7 +6,7 @@
     color: snow;
     text-shadow: 2px 2px 3px rgb(255, 0, 0);
     font-size: 20px;
-    height: 50px;
+    height: 80px;
 }
 
 .Header a {
@@ -22,7 +22,7 @@
 }
 
 
-.dark-mode {
+body .dark-mode {
     background-color: #333;
     color: #fff;
 }
@@ -34,4 +34,87 @@
 
 body {
     margin: 0;
+}
+
+
+.header_black{
+    display: flex;
+    background: dimgray;
+    height: 130px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 100px;
+    font-style: oblique;
+    border-radius: 50px;
+    margin: 10px;
+    border: 2px solid black;
+}
+.header_white{
+    display: flex;
+    background: lightgoldenrodyellow;
+    height: 130px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 100px;
+    font-style: oblique;
+    border-radius: 50px;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+.user{
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+button{
+    height: 30px;
+    width: 80px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 6px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: 3px dashed white;
+}
+.userPhoto{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border: 2px solid red;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+.links_black{
+    text-decoration: none;
+    color: black;
+    background: dimgray;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.links_white{
+    text-decoration: none;
+    color: red;
+    background: lightgoldenrodyellow;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+h5{
+    margin-top: 2px;
 }

@@ -1,11 +1,12 @@
 import React, {FC, useState} from 'react';
-// @ts-ignore
+
 import css from './Search.module.css';
 
 type IProps = {
     onSubmit: CallableFunction,
 }
 const SearchForm:FC<IProps> = ({ onSubmit }) => {
+
     const [query, setQuery] = useState<string>('')
 
     return (

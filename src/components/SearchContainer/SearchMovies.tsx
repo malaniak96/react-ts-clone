@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {FormEvent, useEffect, useState} from 'react';
 import {useSearchParams} from "react-router-dom";
 
 import {movieService} from "../../services/movieService";
@@ -6,7 +6,7 @@ import {IMovie} from "../../interfaces/movieInterface";
 import {SearchForm} from "./SearchForm";
 
 import {SearchMovie} from "./SearchMovie";
-// @ts-ignore
+
 import css from "../MoviesContainer/Movies.module.css";
 
 
@@ -52,19 +52,21 @@ const SearchMovies = () => {
             return prev
         })
     }
-    const handleSearchSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSearchSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        const form = e.target as HTMLFormElement;
+        const form = e.currentTarget;
 
-        if (form && form.elements) {
-            const query: string = (form.elements.namedItem('search') as HTMLInputElement)?.value || '';
-            setParams(prev => {
+        if (form) {
+            const queryInput = form.elements.namedItem('search') as HTMLInputElement;
+            const query: string = queryInput?.value || '';
+
+            setParams((prev) => {
                 prev.set('query', query);
                 prev.set('page', '1');
                 return prev;
             });
         }
-    }
+    };
 
     return (
         <div>

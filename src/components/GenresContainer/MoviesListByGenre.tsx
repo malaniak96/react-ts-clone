@@ -3,7 +3,7 @@ import {IMovie} from "../../interfaces/movieInterface";
 import {genresService} from "../../services/genresService";
 import {NavLink, useParams, useSearchParams} from "react-router-dom";
 import {urls} from "../../constants/urls";
-// @ts-ignore
+
 import css from "../MoviesContainer/Movies.module.css";
 
 

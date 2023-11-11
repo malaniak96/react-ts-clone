@@ -5,7 +5,7 @@ import {MovieInfo} from "./MovieInfo";
 import {IMovie} from "../../interfaces/movieInterface";
 import {genresService} from "../../services/genresService";
 import {IGenre} from "../../interfaces/genreInterface";
-import {Genre} from "../GenresContainer/Genre";
+
 
 
 
@@ -14,49 +14,19 @@ const MoviesInfo:FC<{}> = () => {
     const [genres, setGenres] = useState<IGenre[]>([]);
     const {id} = useParams();
 
+    // const { genreId } = useParams<{ genreId: string }>();
 
-
-    // useEffect(() => {
-    //     movieService
-    //         .getById(+`${id}`).then(({ data }) => {
-    //         setMovie(data);
-    //         return data
-    //     })
-    //         .then((movie) => {
-    //             genresService
-    //                 .getAll()
-    //                 .then(({data}) => {
-    //                     console.log("Fetched genres:", data);
-    //                     if (movie && movie.genre_ids) {
-    //                         const filteredGenres = data.genres.filter((genre: IGenre) => {
-    //                             console.log("Checking genre:", genre.id);
-    //                             return movie.genre_ids.includes(genre.id)
-    //                         });
-    //                         console.log("Filtered genres:", filteredGenres);
-    //                         setGenres(filteredGenres);
-    //                     }
-    //                 })
-    //         })
-    //
-    // }, [id]);
     useEffect(() => {
-        Promise.all([
-            movieService.getById(+`${id}`),
-            genresService.getAll()
-        ])
-            .then(([movieData, genresData]) => {
-                setMovie(movieData.data);
-                setGenres(genresData.data.genres);
-            })
-            .catch(error => {
-                console.error('Error fetching data:', error);
-            });
+        movieService.getById(+`${id}`).then(({ data }) => {setMovie(data); console.log(data, 'this is data')});
+
     }, [id]);
 
-    console.log("Movie:", movie);
-    console.log("Genres:", genres);
-
-
+    useEffect(() => {
+        genresService.getAll()
+            .then(({ data }) => {
+                setGenres(data.genres);
+            })
+    }, []);
 
     return (
         <div>
@@ -66,3 +36,4 @@ const MoviesInfo:FC<{}> = () => {
 };
 
 export {MoviesInfo};
+

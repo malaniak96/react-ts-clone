@@ -3,7 +3,7 @@ import React, {FC} from 'react';
 import {NavLink} from "react-router-dom";
 
 import {IGenre} from "../../interfaces/genreInterface";
-// @ts-ignore
+
 import css from './Genre.module.css';
 
 

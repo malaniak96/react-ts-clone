@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 
 import {urls} from "../../constants/urls";
-// @ts-ignore
+
 import css from './MovieCredits.module.css';
 
 interface IProps {

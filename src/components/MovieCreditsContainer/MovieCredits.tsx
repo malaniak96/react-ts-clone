@@ -3,7 +3,7 @@ import {useParams} from "react-router-dom";
 import {movieService} from "../../services/movieService";
 import {MovieCredit} from "./MovieCredit";
 import {IActor} from "../../interfaces/creditInterface";
-// @ts-ignore
+
 import css from './MovieCredits.module.css';
 
 const MovieCredits:FC<{}> = () => {

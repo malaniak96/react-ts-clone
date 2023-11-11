@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 
 import {IMovie} from "../../interfaces/movieInterface";
 import { urls } from '../../constants/urls';
-// @ts-ignore
+
 import css from './Movies.module.css';
 import {StarsRaiting} from "./StarsRaiting";
 
