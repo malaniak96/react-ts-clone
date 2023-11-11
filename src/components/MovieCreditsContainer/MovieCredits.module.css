@@ -17,40 +17,43 @@
     text-align: center;
     width: 15vw;
     height: 35vh;
-    border:2px solid red;
+    border:2px solid #eee8e8;
     margin-bottom: 20px;
 
 }
 
 .image{
-    width: 8vw;
-    height: 22vh;
-    border-radius: 50%;
+    width: 7vw;
+    height: 19vh;
+    border-radius: 20%;
+    border: 2px solid white;
 
 }
 
-h1{
+.mainCast{
     display: flex;
     color: darkgoldenrod;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
 }
 
 .name{
-    color: red;
-    font-size: 20px;
-    margin-top: 7px;
+    color: lightgoldenrodyellow;
+    font-size: 17px;
+    margin-top: 5px;
     margin-bottom: -4px;
 }
 
-h2{
-    font-size: 15px;
-     margin-bottom: 2px;
-     color: darkgoldenrod;
+.character{
+    font-size: 14px;
+    margin-bottom: 2px;
+    color: darkgoldenrod;
 }
 
 p{
-    font-size: 13px;
+    font-size: 11px;
     margin: 2px;
     color: lightgoldenrodyellow;
 }

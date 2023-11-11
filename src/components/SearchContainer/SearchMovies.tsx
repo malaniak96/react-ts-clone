@@ -1,12 +1,10 @@
 import React, {FormEvent, useEffect, useState} from 'react';
 import {useSearchParams} from "react-router-dom";
 
-import {movieService} from "../../services/movieService";
-import {IMovie} from "../../interfaces/movieInterface";
+import {movieService} from "../../services";
+import {IMovie} from "../../interfaces";
 import {SearchForm} from "./SearchForm";
-
 import {SearchMovie} from "./SearchMovie";
-
 import css from "../MoviesContainer/Movies.module.css";
 
 

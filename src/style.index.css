@@ -1,4 +1,19 @@
-.dark-mode{
-    color: white;
-    background-color: white;
+body.light-mode{
+    color: black;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS0VFR58cXeGfNst-f9nkD85DP7krwLqDQsg&usqp=CAU");
+    background-size: cover;
+    margin: 0;
+    font-family: 'Nanum Pen Script', cursive;
+
 }
+
+
+body {
+    color: lightgoldenrodyellow;
+    background-image: url("https://images.assetsdelivery.com/compings_v2/berezovskyi/berezovskyi1801/berezovskyi180100359.jpg");
+    background-size: cover;
+    margin: 0;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+

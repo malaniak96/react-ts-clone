@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import {IGenre} from "../../interfaces/genreInterface";
-import {Genre} from "./Genre";
-import {genresService} from "../../services/genresService";
 
+import {IGenre} from "../../interfaces";
+import {Genre} from "./Genre";
+import {genresService} from "../../services";
 import css from './Genre.module.css';
 
 const Genres = () => {

@@ -1,14 +1,14 @@
 import React, {FC, useEffect, useState} from 'react';
-import {IMovie} from "../../interfaces/movieInterface";
-import {genresService} from "../../services/genresService";
 import {NavLink, useParams, useSearchParams} from "react-router-dom";
-import {urls} from "../../constants/urls";
 
+import {IMovie} from "../../interfaces";
+import {genresService} from "../../services";
+import {urls} from "../../constants";
 import css from "../MoviesContainer/Movies.module.css";
 
 
 
-const MoviesListByGenre:FC<{}> = () => {
+const MoviesListByGenre:FC = () => {
     const { genreId } = useParams<{ genreId: string }>();
     const [movies, setMovies] = useState<IMovie[]>([]);
     const [query, setQuery] = useSearchParams({page: '1'});

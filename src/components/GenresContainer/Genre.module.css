@@ -8,20 +8,28 @@
 }
 
 .genre{
-    width: 15vw;
-    height: 15vh;
-    border: 2px dashed white;
+    width: 14vw;
+    height: 14vh;
+    border: 2px dashed #f50000;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px;
+    background: #0e0d0d;
 }
 
 h3{
     color: darkgoldenrod;
-    text-shadow: 2px 2px 3px rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgb(252, 252, 252);
+    font-size: 25px;
+}
+
+h3:hover{
+    color: darkgoldenrod;
+    text-shadow: 2px 2px 3px rgb(252, 251, 251);
     font-size: 30px;
+    text-align: center;
 }
 
 a {

@@ -1,10 +1,8 @@
 import React, {FC} from 'react';
-
 import {NavLink} from "react-router-dom";
 
-import {IMovie} from "../../interfaces/movieInterface";
-import {urls} from "../../constants/urls";
-
+import {IMovie} from "../../interfaces";
+import {urls} from "../../constants";
 import css from './Search.module.css'
 
 interface IProps{
@@ -20,9 +18,9 @@ const SearchMovie:FC<IProps> = ({movie}) => {
         : `https://as1.ftcdn.net/v2/jpg/02/99/61/74/1000_F_299617487_fPJ8v9Onthhzwnp4ftILrtSGKs1JCrbh.jpg`;
 
     return (
-        <li className={css.movie}>
+        <li className={css.movieSearch}>
             <NavLink to={`/movie/${id}?language=en-US`}><img className={css.img} src={imageMovie} alt={original_title}/></NavLink>
-            <h2 className={css.title}>{movie.original_title}</h2>
+            <h1 className={css.titleSearch}>{movie.original_title}</h1>
         </li>
     );
 };

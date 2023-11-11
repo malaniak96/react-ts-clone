@@ -1,9 +1,7 @@
 import React, {FC} from 'react';
-
 import {NavLink} from "react-router-dom";
 
-import {IGenre} from "../../interfaces/genreInterface";
-
+import {IGenre} from "../../interfaces";
 import css from './Genre.module.css';
 
 

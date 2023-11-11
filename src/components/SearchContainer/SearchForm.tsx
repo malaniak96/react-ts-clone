@@ -2,6 +2,7 @@ import React, {FC, useState} from 'react';
 
 import css from './Search.module.css';
 
+
 type IProps = {
     onSubmit: CallableFunction,
 }

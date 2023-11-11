@@ -30,22 +30,20 @@
     border: 3px dashed white;
 }
 
-.title{
+.titleSearch{
     font-size: 15px;
-    color: white;
     text-align: center;
 }
 
-.movie{
+.movieSearch{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 15vw;
-    height: 40vh;
-    margin: 20px;
+    width: 17vw;
+    height: 42vh;
+    margin: 15px;
     border: 2px solid red;
-    color: white;
 
 }
 
@@ -73,8 +71,11 @@
     justify-content: center;
     margin-top: 80px;
     margin-bottom: 70px;
-}
 
+}
+input{
+    background: black;
+}
 .button{
     background-color: red;
     width: 5.5vw;

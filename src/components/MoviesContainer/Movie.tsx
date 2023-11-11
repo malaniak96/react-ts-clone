@@ -1,12 +1,10 @@
 import React, {FC} from 'react';
-
 import {NavLink} from "react-router-dom";
 
-import {IMovie} from "../../interfaces/movieInterface";
-import { urls } from '../../constants/urls';
-
+import {IMovie} from "../../interfaces";
+import { urls } from '../../constants';
 import css from './Movies.module.css';
-import {StarsRaiting} from "./StarsRaiting";
+import {StarsRating} from "./StarsRating";
 
 
 
@@ -27,10 +25,10 @@ const Movie: FC<IProps> = ({movie}) => {
 
     return (
         <li className={css.movie}>
-            <div>{year}</div>
+            <div>({year})</div>
             <NavLink to={`/movie/${id}?language=en-US`}> <img className={css.img} src={imageMovie} alt={original_title}/></NavLink>
-            <div className={css.title}>{original_title}</div>
-            <div><StarsRaiting value={vote_average}/></div>
+            <div className={css.titleMovie}>{original_title}</div>
+            <div><StarsRating value={vote_average}/></div>
         </li>
     );
 };

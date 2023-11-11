@@ -1,7 +1,6 @@
 import React, {FC} from 'react';
 
-import {urls} from "../../constants/urls";
-
+import {urls} from "../../constants";
 import css from './MovieCredits.module.css';
 
 interface IProps {
@@ -21,7 +20,7 @@ const MovieCredit:FC<IProps> = ({profile_path,original_name, character}) => {
             <div><img className={css.image} src={imageActor} alt={original_name}/></div>
             <div className={css.name}>{original_name}</div>
             <div>
-                <h2>Character Played:</h2>
+                <h1 className={css.character}>Character:</h1>
                 <p>{character}</p>
             </div>
         </li>
