@@ -1,9 +1,7 @@
 import React from 'react';
 
-import {MoviesInfo} from "../components/MoviesContainer/MoviesInfo";
-import {MovieCredits} from "../components/MovieCreditsContainer/MovieCredits";
-
 import css from './Pages.module.css';
+import {MovieCredits, MoviesInfo} from "../components";
 
 const MovieInfoPage = () => {
 

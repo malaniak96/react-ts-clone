@@ -1,17 +1,18 @@
 body.light-mode{
     color: black;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS0VFR58cXeGfNst-f9nkD85DP7krwLqDQsg&usqp=CAU");
-    background-size: cover;
+    background: rgb(227,10,207);
+    background: linear-gradient(90deg, rgba(227,10,207,0.9131302179074755) 6%, rgba(255,170,203,1) 100%, rgba(173,110,192,1) 100%);
     margin: 0;
     font-family: 'Nanum Pen Script', cursive;
+    font-weight: bold;
 
 }
 
 
 body {
     color: lightgoldenrodyellow;
-    background-image: url("https://images.assetsdelivery.com/compings_v2/berezovskyi/berezovskyi1801/berezovskyi180100359.jpg");
-    background-size: cover;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 27%, rgba(173,110,192,1) 100%, rgba(0,212,255,1) 100%);
     margin: 0;
     font-family: 'Nanum Pen Script', cursive;
 }

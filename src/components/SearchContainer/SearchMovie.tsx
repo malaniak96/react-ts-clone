@@ -18,10 +18,10 @@ const SearchMovie:FC<IProps> = ({movie}) => {
         : `https://as1.ftcdn.net/v2/jpg/02/99/61/74/1000_F_299617487_fPJ8v9Onthhzwnp4ftILrtSGKs1JCrbh.jpg`;
 
     return (
-        <li className={css.movieSearch}>
+        <div className={css.movieSearch}>
             <NavLink to={`/movie/${id}?language=en-US`}><img className={css.img} src={imageMovie} alt={original_title}/></NavLink>
             <h1 className={css.titleSearch}>{movie.original_title}</h1>
-        </li>
+        </div>
     );
 };
 

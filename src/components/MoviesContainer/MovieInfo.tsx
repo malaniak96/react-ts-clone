@@ -13,7 +13,7 @@ interface IProps {
 
 }
 
-const MovieInfo: FC<IProps>  = ({movie}) => {
+const MovieInfo: FC<IProps> = ({movie}) => {
     const {poster_path, original_title, overview, vote_average, genres, release_date, runtime} = movie;
 
     const imageMovie = poster_path
@@ -29,19 +29,31 @@ const MovieInfo: FC<IProps>  = ({movie}) => {
     const formattedDuration = formatDuration(runtime);
 
     return (
-        <ul className={css.ulInfo}>
-          <div className={css.movieDetails}>
-              <li><img className={css.imageInfo} src={imageMovie} alt={original_title}/></li>
-              <li className={css.titleInfo}>{original_title}</li>
-              <li className={css.overview}>{overview}</li>
-          </div>
-            <div className={css.movieAdditional}>
-                <li className={css.vote}> <StarsRating value={vote_average}/>  <div className={css.rating}>Rating: <div className={css.descriptions}>{vote_average}</div></div></li>
-                <li className={css.genres}> Genres:<div className={css.descriptions}>{genres && genres.map(genre => <NavLink className={css.descriptions} key={genre.id} to={`/genre/${genre.id}`} >{genre.name}</NavLink>)}</div> </li>
-                <li className={css.release}> Release Date:<div className={css.descriptions}>{release_date}</div></li>
-                <li className={css.release}> Duration:<div className={css.descriptions}>{formattedDuration}</div></li>
+        <div className={css.Info}>
+            <div className={css.movieDetails}>
+                <div><img className={css.imageInfo} src={imageMovie} alt={original_title}/></div>
+                <div className={css.titleOverview}>
+                    <div className={css.titleInfo}>{original_title}</div>
+                    <div className={css.overview}>{overview}</div>
+                </div>
             </div>
-        </ul>
+            <div className={css.movieAdditional}>
+                <div className={css.stars}><StarsRating value={vote_average}/>
+                    <div>Rating: <div className={css.descriptions}>{vote_average}</div></div>
+                </div>
+                <div className={css.additional}> Genres:
+                    <div className={css.descriptions}>{genres && genres.map(genre => <NavLink
+                        className={css.descriptions} key={genre.id}
+                        to={`/genre/${genre.id}`}>{genre.name}</NavLink>)}</div>
+                </div>
+                <div className={css.additional}> Release Date:
+                    <div className={css.descriptions}>{release_date}</div>
+                </div>
+                <div className={css.additional}> Duration:
+                    <div className={css.descriptions}>{formattedDuration}</div>
+                </div>
+            </div>
+        </div>
     );
 };
 

@@ -21,7 +21,7 @@ const SearchMovies = () => {
         movieService.getMoviesFromSearch(queryParam, pageParam)
             .then(({ data }) => {
                 setMovies(data.results);
-                setTotalPages(data.page);
+                setTotalPages(data.total_pages);
             });
     };
 
@@ -31,7 +31,7 @@ const SearchMovies = () => {
         } else {
             movieService.getTrendingMovies(query, page).then(({data}) => {
                 setMovies(data.results);
-                setTotalPages(data.page);
+                setTotalPages(data.total_pages);
             })
         }
     }, [query,page]);
@@ -66,14 +66,15 @@ const SearchMovies = () => {
         }
     };
 
+
     return (
         <div>
             <div>
                 <SearchForm onSubmit={handleSearchSubmit}/>
             </div>
-            <ul className={css.ul}>
+            <div className={css.div}>
                 {movies.map(movie => <SearchMovie key={movie.id} movie={movie}/>)}
-            </ul>
+            </div>
             <div className={css.btns}>
                 <button className={css.btn} onClick={handlePagePrev} disabled={page === '1'}> &lt; </button>
                     <span> Page: {page}</span>

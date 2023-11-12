@@ -6,10 +6,6 @@ import {IGenre, IMovie} from "../../interfaces";
 import {genresService, movieService} from "../../services";
 
 
-
-
-
-
 const MoviesInfo:FC = () => {
     const [movie, setMovie] = useState<IMovie | null>(null);
     const [genres, setGenres] = useState<IGenre[]>([]);

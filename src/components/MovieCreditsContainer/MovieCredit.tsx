@@ -17,8 +17,8 @@ const MovieCredit:FC<IProps> = ({profile_path,original_name, character}) => {
 
     return (
         <li className={css.ul}>
-            <div><img className={css.image} src={imageActor} alt={original_name}/></div>
             <div className={css.name}>{original_name}</div>
+            <div><img className={css.image} src={imageActor} alt={original_name}/></div>
             <div>
                 <h1 className={css.character}>Character:</h1>
                 <p>{character}</p>

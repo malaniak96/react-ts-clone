@@ -37,9 +37,9 @@ const MoviesList = () => {
 
     return (
         <div>
-            <ul className={css.ul}>
+            <div className={css.div}>
                 {movies.map(movie => <Movie key={movie.id} movie={movie}/>)}
-            </ul>
+            </div>
            <div className={css.btns}>
                <button className={css.btn} onClick={handlePagePrev} disabled={page === '1'}> &lt; </button>
                     <span> Page: {page} out of 40863</span>

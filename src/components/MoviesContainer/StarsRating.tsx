@@ -2,7 +2,6 @@ import React, {FC} from 'react';
 
 import {Box, Rating, Typography} from "@mui/material";
 
-
 interface IProps{
     value: number;
 }

@@ -2,10 +2,9 @@ import React, {FC} from 'react';
 import {NavLink} from "react-router-dom";
 
 import {IMovie} from "../../interfaces";
-import { urls } from '../../constants';
+import {urls} from '../../constants';
 import css from './Movies.module.css';
 import {StarsRating} from "./StarsRating";
-
 
 
 interface IProps {
@@ -24,12 +23,12 @@ const Movie: FC<IProps> = ({movie}) => {
 
 
     return (
-        <li className={css.movie}>
+        <div className={css.movie}>
             <div>({year})</div>
             <NavLink to={`/movie/${id}?language=en-US`}> <img className={css.img} src={imageMovie} alt={original_title}/></NavLink>
             <div className={css.titleMovie}>{original_title}</div>
             <div><StarsRating value={vote_average}/></div>
-        </li>
+        </div>
     );
 };
 

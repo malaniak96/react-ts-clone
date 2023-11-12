@@ -2,44 +2,51 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
-    color: snow;
-    text-shadow: 2px 2px 3px rgb(255, 0, 0);
     font-size: 20px;
     height: 80px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 74%, rgba(173,110,192,1) 100%, rgba(0,212,255,1) 100%);
 }
 
 .Header a {
     text-decoration: none;
-    color: red;
-    text-shadow: 3px 3px 3px rgb(213, 140, 11);
+    background: -webkit-linear-gradient(#eee, #5c1a6b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
-.Header a[class='active'] {
-    color: red;
-    text-shadow: 4px 4px 3px rgb(213, 140, 11);
-}
 
 .mode{
-    height: 35px;
-    width: 80px;
-    padding: 10px;
-    border-radius: 10px;
+    width: 8vw;
+    height: 8vh;
+    padding: 16px 33px 16px 33px;
+    border-radius: 36px;
+    background: linear-gradient(98.88deg, #a142f3 -2.99%, #000000 102.28%),
+    linear-gradient(0deg, #000000, #000000);
+    color: #FFFFFF;
+    text-transform:uppercase;
+    text-align: center;
+    margin-right: 10px;
     font-size: 10px;
     font-weight: bold;
     cursor: pointer;
-    background-color: black;
-    color: #ef0505;
-    border: 3px dashed white;
     display: flex;
     align-items: center;
     justify-content: center;
     outline-offset: 4px;
-    box-shadow: 0 10px 20px -6px #777;
+
 }
 
-
+.mode:hover{
+    color: black;
+    font-weight: bold;
+    background: white;
+    position: relative;
+    bottom: 3px;
+    right: 3px;
+    cursor: pointer;
+}
 
 .user{
     display: flex;
@@ -49,22 +56,11 @@
     flex-direction: row;
 }
 
-button{
-    height: 30px;
-    width: 80px;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 10px;
-    cursor: pointer;
-    background-color: black;
-    color: white;
-    border: 3px dashed white;
-}
 .userPhoto{
     border-radius: 50%;
     height: 40px;
     width: 40px;
-    border: 2px solid red;
+    border: 2px solid purple;
     margin-top: 30px;
     margin-right: 20px;
 }
@@ -75,6 +71,8 @@ h5{
 }
 
 .movieDB{
-    color: darkgoldenrod;
+    background: -webkit-linear-gradient(#eee, #5c1a6b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }

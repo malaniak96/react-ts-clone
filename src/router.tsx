@@ -1,11 +1,7 @@
 import {createBrowserRouter, Navigate} from "react-router-dom";
 
 import {MainLayout} from "./layouts/MainLayout";
-import {MoviesPage} from "./pages/MoviesPage";
-import {GenresPage} from "./pages/GenresPage";
-import {SearchPage} from "./pages/SearchPage";
-import {MovieInfoPage} from "./pages/MovieInfoPage";
-import {MoviesFromGenresPage} from "./pages/MoviesFromGenresPage";
+import {GenresPage, MovieInfoPage, MoviesFromGenresPage, MoviesPage, SearchPage} from "./pages";
 
 
 

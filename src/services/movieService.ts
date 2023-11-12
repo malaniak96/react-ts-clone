@@ -1,9 +1,10 @@
 import {axiosService} from "./axiosService";
 
-import {urls} from "../constants/urls";
+import {urls} from "../constants";
 import {IRes} from "../types/IResType";
-import {IMovie, IMovieRes, ISearch} from "../interfaces/movieInterface";
-import {IMovieCredits} from "../interfaces/creditInterface";
+import {IMovie, IMovieCredits, IMovieRes, ISearch} from "../interfaces";
+
+
 
 
 const movieService = {

@@ -13,8 +13,8 @@ const Genre:FC<IProps> = ({genre}) => {
     const {id,name} = genre;
 
     return (
-        <div className={css.genre}>
-            <NavLink to={`${id}`}> <h3> {name}</h3></NavLink>
+        <div>
+            <NavLink className={css.navlink} to={`${id}`}> <h3> {name}</h3></NavLink>
         </div>
     );
 };

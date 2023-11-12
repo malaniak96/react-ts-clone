@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {SearchMovies} from "../components/SearchContainer/SearchMovies";
+import {SearchMovies} from "../components";
 
 
 const SearchPage = () => {

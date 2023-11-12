@@ -12,15 +12,18 @@ const SearchForm:FC<IProps> = ({ onSubmit }) => {
 
     return (
         <form className={css.form} onSubmit={(e)  => onSubmit(e)}>
-            <input
-                className={css.input}
-                name="search"
-                type="text"
-                placeholder={'Search movie'}
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
-            />
-            <button className={css.button}>Search</button>
+               <div>
+                   <input
+                       className={css.input}
+                       name="search"
+                       type="text"
+                       placeholder={'Search movie'}
+                       value={query}
+                       onChange={(e) => setQuery(e.target.value)}
+                   />
+                   <button className={css.button}>Search</button>
+               </div>
+            <h1 className={css.trendingMovies}>Trending Movies of The Week: </h1>
         </form>
     );
 };

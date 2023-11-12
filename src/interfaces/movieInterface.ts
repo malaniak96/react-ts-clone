@@ -25,5 +25,6 @@ export interface IMovieRes{
 
 export interface ISearch{
     page: number;
-    results: IMovie[] | []
+    results: IMovie[] | [];
+    total_pages: number;
 }

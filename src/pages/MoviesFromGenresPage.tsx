@@ -1,6 +1,7 @@
 import React from 'react';
 
-import {MoviesListByGenre} from "../components/GenresContainer/MoviesListByGenre";
+import {MoviesListByGenre} from "../components";
+
 
 const MoviesFromGenresPage = () => {
     return (
